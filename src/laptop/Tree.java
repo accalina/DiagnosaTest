@@ -49,7 +49,7 @@ public class Tree extends javax.swing.JFrame {
 
         m11.setText("jCheckBox1");
 
-        m1.setText("Titit");
+        m1.setText("Seluruh layar hitam atau gelap (Blank)");
         m1.setName(""); // NOI18N
         m1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +91,7 @@ public class Tree extends javax.swing.JFrame {
                     .addComponent(m2)
                     .addComponent(m3)
                     .addComponent(m1, javax.swing.GroupLayout.Alignment.LEADING))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
