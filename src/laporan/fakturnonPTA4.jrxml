@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="396" columnWidth="595" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="badb5cf1-3bd7-43b7-8247-40502e7e6416">
+	<property name="ireport.zoom" value="1.5026296018031673"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<parameter name="para1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="para2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="para3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Para4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from login]]>
+	</queryString>
+	<field name="username" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="password" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="NORUT" class="java.lang.Integer" resetType="None" calculation="Count">
+		<variableExpression><![CDATA[$V{NORUT}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="117" splitType="Stretch">
+			<staticText>
+				<reportElement x="183" y="43" width="211" height="20" uuid="3c550ee9-96f4-47d9-a4d2-3b0498a841b9"/>
+				<textElement>
+					<font fontName="Courier New" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SISTEM DETEKSI KERUSAKAN]]></text>
+			</staticText>
+			<textField pattern="#,##/#PCS">
+				<reportElement x="451" y="16" width="132" height="27" uuid="1e0b715d-39c5-4e47-b6b9-366fcb562c19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{Para4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="26" y="0" width="207" height="21" uuid="e5055403-1ceb-4c8b-95bd-c283a161c89f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="382" y="0" width="201" height="21" uuid="fb4c719d-7008-4cb7-98e0-0bbd8c9887cd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="0" width="16" height="21" uuid="d2e76b0e-c409-4601-a02e-12a936e75aed"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="12" y="1" width="14" height="18" uuid="f9a54cb6-0a2c-48da-9341-70dde344928a"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Courier New" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="233" y="0" width="149" height="21" uuid="ed2a8a0a-4c63-42e5-95b9-df5e8b8f9e2e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="382" y="1" width="201" height="20" uuid="08ef0d3c-83b2-4d58-96b1-100dec0e375c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[USULAN /SARAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="26" y="2" width="207" height="17" uuid="3992d254-b7a8-4491-82f2-ecf226da4ad1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[KERUSAKAN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="233" y="1" width="150" height="17" uuid="baa50e19-058e-4a8e-b0c3-b452490d550d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PENYEBAB]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="133" splitType="Stretch">
+			<rectangle>
+				<reportElement x="26" y="0" width="207" height="112" uuid="b06f4b92-2f0b-4b18-b427-d64309891bf2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="382" y="0" width="201" height="112" uuid="6c113c3e-0fa1-4aa2-bb09-24757bc5591c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="10" y="0" width="16" height="112" uuid="97ad5edc-16c6-47b9-94c4-0d3595eb30f1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="233" y="0" width="149" height="112" uuid="34ce4adf-9e80-40e9-afd7-cd526bbc730b"/>
+			</rectangle>
+			<textField pattern="#,##/#PCS">
+				<reportElement x="382" y="0" width="201" height="102" uuid="7a24fbea-79e8-4b63-bd46-29baa2d4055a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{para3}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#.00PCS" isBlankWhenNull="false">
+				<reportElement x="233" y="0" width="149" height="102" uuid="5d2e2a0e-cc1e-4dd7-a9a0-aa9c04f2a2db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{para2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="26" y="0" width="207" height="102" uuid="19d83c8f-cc71-4af8-9b52-94a5c8a9731b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{para1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="12" y="37" width="14" height="13" uuid="f6a6e69f-8d83-435b-b37f-c0527a875d31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[1]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="461" y="119" width="133" height="14" uuid="bad0a1ca-0435-4030-8d1a-8df4cb27a6af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fridaus Ibrahim Setyo ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="461" y="119" width="133" height="14" uuid="bad0a1ca-0435-4030-8d1a-8df4cb27a6af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Courier New" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fridaus Ibrahim Setyo ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="93" splitType="Stretch">
+			<line>
+				<reportElement x="465" y="1" width="118" height="1" uuid="17c6aa83-56b1-41e7-9e83-bf59960a157c"/>
+			</line>
+		</band>
+	</pageFooter>
+</jasperReport>

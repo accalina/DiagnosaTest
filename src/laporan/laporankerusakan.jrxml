@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ac737079-2efe-464c-8dea-ebea1b86969f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="84" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="25" width="207" height="18" uuid="a1df3f3d-f3b2-47fd-8372-b334d516380c"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aplikasi Pendeteksi Kerusakan Laptop
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="43" width="168" height="20" uuid="c6643bd7-f5a5-4cc9-ad11-fce7c1512aaa"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12"/>
+				</textElement>
+				<text><![CDATA[Informatika 2014/2018 | Kelas W]]></text>
+			</staticText>
+			<image>
+				<reportElement x="443" y="0" width="112" height="84" uuid="5410fc10-26b9-4656-b372-d6ca2f2883dc"/>
+				<imageExpression><![CDATA["F:\\Kerja\\Persyaratan Kerja\\Jakarta Techno Solutions\\laptop\\laptop\\src\\gambar\\unindra.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="182" y="0" width="198" height="20" uuid="3d93b083-1b32-465c-b2ca-d898d15a37ad"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12" isBold="true"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[Keterangan Hasil Deteksi Kerusakan Laptop]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="42" uuid="a8d0e53c-934a-45aa-92ab-afefb96a9eeb"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Times New Roman" size="12"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<text><![CDATA[	Dengan ini Aplikasi menginformasikan bahwa telah dilakukan deteksi kerusakan pada Laptop berdasarkan Indikasi Fisik yang muncul dengan detail sebagai berikut: ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
